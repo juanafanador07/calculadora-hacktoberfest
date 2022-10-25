@@ -42,5 +42,12 @@ function calcular(){
     if(resultado % 1 * 1000 > 0){
         resultado = resultado.toFixed(2);
     }
-    resultadoText.innerHTML = resultado + sign;
+
+    if(!isNaN(resultado)){
+        resultadoText.innerHTML = "El resultado es " + resultado + sign;
+    } else {
+        resultadoText.innerHTML = "Error, los datos de entrada son incorrectos";
+    }
+    
 }
+
