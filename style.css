@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #444df7;
+    --light-color:#e5e5f7;
+    --primary-color-40: #444df775;
+    --primary-color-dark: #2a3098;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--light-color);
+    background-image:  linear-gradient(var(--primary-color-40) 2px, transparent 2px), linear-gradient(90deg, var(--primary-color-40) 2px, transparent 2px), linear-gradient(var(--primary-color-40) 1px, transparent 1px), linear-gradient(90deg, var(--primary-color-40) 1px, #e5e5f7 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.calculadora {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 50%;
+    background: var(--primary-color);
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: .5rem .5rem var(--primary-color-dark);
+}
+
+.calculadora__title {
+    color: var(--light-color);
+}
+
+.calculadora__controls {
+    
+}
+
+.calculadora__controls__input {
+    width: 15%;
+    text-align: center;
+    background: var(--light-color);
+    border: none;
+    padding: .25rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+.calculadora__controls__operation {
+    width: 25%;
+    text-align: center;
+    background: var(--light-color);
+    border: none;
+    padding: .25rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+.calculadora__controls__calcular {
+    width: 15%;
+    font-size: 1rem;
+    background: var(--light-color);
+    border: none;
+    padding: .4rem;
+    border-radius: .25rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.calculadora__resultado {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 80%;
+    margin: 1rem 10%;
+    color: var(--light-color);
+    border: 2px dashed var(--light-color);
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+    font-weight: bold;
+}

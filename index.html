@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input type="number" value="0" id="numA">
-    <select id="operation">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-        <option value="^">^</option>
-        <option value="porc">Por ciento de</option>
-    </select>
-    <input type="number" value="0" id="numB">
-    <input type="button" value="Calcular" id="calcular">
-    <p id="resultado"></p>
+    <div class="calculadora">
+        <h1 class="calculadora__title">Calculadora</h1>
+        <div class="calculadora__controls">
+            <input class="calculadora__controls__input" type="number" value="0" id="numA" placeholder="Numero 1">
+            <select class="calculadora__controls__operation" id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="^">^</option>
+                <option value="porc">Por ciento de</option>
+            </select>
+            <input class="calculadora__controls__input" type="number" value="0" id="numB" placeholder="Numero 2">
+            <input class="calculadora__controls__calcular" type="button" value="Calcular" id="calcular">
+        </div>
+        <p class="calculadora__resultado" id="resultado">Aquí se mostrará el resultado</p>
+    </div>
 
     <script src="./script.js"></script>
 </body>
